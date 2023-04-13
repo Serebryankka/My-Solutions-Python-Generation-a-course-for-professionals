@@ -1,6 +1,6 @@
 def task():
     data = (input() for _ in range(int(input())))
-    data = list(map(lambda x: x.split(', '), data))
+    data = tuple(map(lambda x: x.split(', '), data))
     result = set(data[0]).intersection(*data[1:])
     return 'Сериал снять не удастся' if not result else ", ".join(sorted(result))
 
