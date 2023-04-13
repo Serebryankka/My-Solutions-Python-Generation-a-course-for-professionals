@@ -1,6 +1,6 @@
 def task():
-    # word = input()
-    # words = (input() for _ in range(int(input())))
+    word = input()
+    words = (input() for _ in range(int(input())))
     vowels = 'ауоыиэяюёе'
     indexes = [i for i in range(len(word)) if word[i] in vowels]
     count_indexes = len(indexes)
