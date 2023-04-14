@@ -16,9 +16,9 @@ def task():
         if count == count_indexes:
             result.append(w)
 
-    return '\n'.join(result)
+    return result
 
 
 if __name__ == '__main__':
-    print(task())
+    print(*task(), sep='\n')
     
