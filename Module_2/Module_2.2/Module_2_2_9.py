@@ -23,7 +23,7 @@ def main():
             d[extension]['names'] += [name]
 
     d = dict(sorted(d.items(), key=lambda x: x[0]))
-
+    new_line = '\n'
     for ex in d:
         d[ex]['names'] = sorted(d[ex]['names'])
         print(f'''{f".{ex}{new_line}".join(d[ex]["names"])}.{ex}
