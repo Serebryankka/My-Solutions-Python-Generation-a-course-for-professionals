@@ -1,4 +1,4 @@
 from collections import Counter
 
 
-print(Counter(input().split()).most_common(1)[0][0])
+print(Counter(input().lower().split()).most_common(1)[0][0])
