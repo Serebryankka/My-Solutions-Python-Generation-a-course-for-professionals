@@ -1,7 +1,5 @@
 def convert(number):
-    if number < 0:
-        x = 3
+    if number >= 0 :
+        return (bin(number)[2:], oct(number)[2:], hex(number)[2:].upper())
     else:
-        x = 2
-    return bin(number)[x:], oct(number)[x:], hex(number)
-  
+        return ('-'+bin(number)[3:], '-'+oct(number)[3:], '-'+hex(number)[3:].upper())
