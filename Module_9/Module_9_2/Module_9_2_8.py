@@ -1,3 +1,6 @@
+from collections import defaultdict
+
+
 def hash_as_key(objects):
     d = defaultdict(list)
     [d[hash(i)].append(i) for i in objects]
