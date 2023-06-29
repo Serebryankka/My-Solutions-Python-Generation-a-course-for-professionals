@@ -1,4 +1,4 @@
-def cyclic_shift(numbers: list[int | float], step: int) -> list[int]:
+def cyclic_shift(numbers: list[int | float], step: int) -> None:
     if step < 0:
         for _ in range(abs(step)):
             numbers.append(numbers.pop(0))
